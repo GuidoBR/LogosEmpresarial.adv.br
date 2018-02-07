@@ -1,0 +1,23 @@
+/* Stuck menu styles
+========================================================*/
+.isStuck {
+	background: @mn-color;
+	z-index: 9;
+	padding: 0;
+	border-bottom: 1px solid @mn-color;
+	nav {margin-top: 17px !important;}
+	.sf-menu {
+		margin-top: 3px;
+		> li > a:hover:after {
+			bottom: -23px;
+		}
+		> li.current > a:after {
+			bottom: -23px;
+		}
+	}
+}
+@media only screen and (max-width: 979px) {
+  .isStuck {
+    display: none !important;
+  }
+}
