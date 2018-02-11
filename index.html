@@ -223,46 +223,60 @@
 	</div>
 </section>
 
-<script>
-	jQuery(function(){
-		jQuery('#camera_wrap').camera({
-			height: '34.58333333333333%',
-			thumbnails: false,
-			pagination: true,
-			fx: 'simpleFade',
-			loader: 'none',
-			hover: false,
-			navigation: false,
-			playPause: false,
-			minHeight: "139px",
-		});
-	});
-</script>
-<script>
-	$(document).ready(function() {
-		$(".owl-carousel").owlCarousel({
-			navigation: true,
-			pagination: false,
-			items : 3,
-			itemsDesktop : [1199,3],
-			itemsDesktopSmall : [979,3],
-			itemsTablet: [750,1],
-			itemsMobile : [479,1],
-			navigationText: false
-		});
-	});
-</script>
-<script>
-	$(document).ready(function() { 
-			if ($('html').hasClass('desktop')) {
-				$.stellar({
-					horizontalScrolling: false,
-					verticalOffset: 20,
-					resposive: true,
-					hideDistantElements: true,
-				});
-			}
-		});
-</script>
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12 copyright">
+        <img src="images/logo.png" alt="Logos">
+        <pre>Avenida das Americas, 3500 – bloco 7 – grupo 116 – Le Monde Offices
+          Barra da Tijuca – Rio de Janeiro – RJ
+          <a href="mailto:contato@logosempresarial.adv.br">contato@logosempresarial.adv.br</a> - (21) 983 568 252</pre>
+        <pre>© <span id="copyright-year"></span></pre>
+        </div>
+      </div>
+    </div>
+</footer>
+
+  <script>
+    jQuery(function(){
+      jQuery('#camera_wrap').camera({
+        height: '34.58333333333333%',
+        thumbnails: false,
+        pagination: true,
+        fx: 'simpleFade',
+        loader: 'none',
+        hover: false,
+        navigation: false,
+        playPause: false,
+        minHeight: "139px",
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $(".owl-carousel").owlCarousel({
+        navigation: true,
+        pagination: false,
+        items : 3,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3],
+        itemsTablet: [750,1],
+        itemsMobile : [479,1],
+        navigationText: false
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function() { 
+      if ($('html').hasClass('desktop')) {
+        $.stellar({
+          horizontalScrolling: false,
+          verticalOffset: 20,
+          resposive: true,
+          hideDistantElements: true,
+        });
+      }
+    });
+  </script>
 </body>
 </html>
