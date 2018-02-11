@@ -103,7 +103,7 @@ h5 a:hover {
   margin: 0;
 }
 .sf-menu > li > a {
-  color: #7d261a;
+  color: #fff;
   font-size: 27px;
   margin-left: 29px;
   font-family: 'Marvel', sans-serif;
@@ -187,7 +187,7 @@ h5 a:hover {
   display: block;
 }
 .sf-menu ul li:hover > a {
-  color: #7d261a;
+  color: #fff;
 }
 /* Second level sub-menu styles
 ========================================================*/
@@ -665,7 +665,7 @@ p {
   color: #10595f;
 }
 .index-4 p a:hover {
-  color: #7d261a;
+  color: #fff;
 }
 .index-4 .block-1 {
   padding: 120px 0 15px;
@@ -782,7 +782,7 @@ p {
 }
 #toTop:hover {
   outline: none;
-  color: #7d261a;
+  color: #fff;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
