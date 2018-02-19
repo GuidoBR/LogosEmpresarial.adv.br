@@ -249,6 +249,9 @@ h5 a:hover {
 strong {
   font-weight: bold;
 }
+ol {
+  list-style: auto;
+}
 h2,
 h3,
 h4 {
