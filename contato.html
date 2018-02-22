@@ -170,37 +170,37 @@
       </div>
     </div>
   </footer>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkXVy2y37y5Yk4fPEmR8cvUgiQpisIppE&callback=initMap"type="text/javascript"></script>
   <script type="text/javascript">
     google_api_map_init();
-function google_api_map_init(){
-  var map;
-  var coordData = new google.maps.LatLng(parseFloat(-22.999412), parseFloat(-43.348752,12));
-  var markCoord1 = new google.maps.LatLng(parseFloat(-22.999412), parseFloat(-43.348752));
-  var marker;
+    function google_api_map_init(){
+      var map;
+      var coordData = new google.maps.LatLng(parseFloat(-22.999412), parseFloat(-43.348752,12));
+      var markCoord1 = new google.maps.LatLng(parseFloat(-22.999412), parseFloat(-43.348752));
+      var marker;
 
-  function initialize() {
-    var mapOptions = {
-      zoom: 15,
-      center: coordData,
-      scrollwheel: false,
+      function initialize() {
+        var mapOptions = {
+          zoom: 15,
+          center: coordData,
+          scrollwheel: false,
+        }
+
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+        marker = new google.maps.Marker({
+          map:map,
+          position: markCoord1,
+        });
+        
+        google.maps.event.addDomListener(window, 'resize', function() {
+          map.setCenter(coordData);
+          var center = map.getCenter();
+        });
+      }
+      
+      google.maps.event.addDomListener(window, "load", initialize);
     }
-
-    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-
-    marker = new google.maps.Marker({
-      map:map,
-      position: markCoord1,
-    });
-    
-    google.maps.event.addDomListener(window, 'resize', function() {
-      map.setCenter(coordData);
-      var center = map.getCenter();
-    });
-  }
-  
-  google.maps.event.addDomListener(window, "load", initialize); 
-  
-}
 
 </script>
 </body>
