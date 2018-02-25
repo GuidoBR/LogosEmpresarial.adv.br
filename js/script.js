@@ -9,7 +9,7 @@ include('js/jquery.cookie.js');
 
 /* cookie.JS
 ========================================================*/
-include('js/TMForm.js');
+// include('js/TMForm.js');
 include('js/modal.js');
 
 
@@ -101,7 +101,7 @@ $(function(){
        window.location.href = $(this).attr("href");
       }
      );
-    } 
+    }
    })
   }
  }
@@ -123,3 +123,7 @@ $('.btn').each(function(){
       $(this).addClass('custom_hover');
       $(this).html('<span><span>'+title+'</span><strong>'+title+'</strong></span>');
 })
+
+$("#contact-form").submit(function () {
+    $("#email-success-modal").modal("show");
+});
