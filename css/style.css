@@ -364,6 +364,14 @@ p {
     margin-bottom: 20px;
     color: #000000;
   }
+  #header h1 span {
+      font: 16px/24px 'Marvel', sans-serif;
+  }
+  .sf-menu > li > a {
+      font-size: 19px;
+      margin-left: 10px;
+  }
+
 }
 @media only screen and (max-width: 767px) {
   h2 {
