@@ -2,839 +2,839 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:700,400,300);
 @import url(//fonts.googleapis.com/css?family=Marvel:400,700);
 /* =======================================================
-					variables
+variables
 ======================================================== */
 /*========================================================
-										Main layout styles
+Main layout styles
 =========================================================*/
 body {
-  background: #fff;
-  font: 14px/24px Georgia, 'Times New Roman', Times, serif;
+    background: #fff;
+    font: 14px/24px Georgia, 'Times New Roman', Times, serif;
 }
 a {
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-transition: 0.3s all ease;
-  transition: 0.3s all ease;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
 }
 a:hover {
-  -webkit-transition: 0.3s all ease;
-  transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
 }
 a[href^="tel:"] {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 h2 a,
 h3 a,
 h4 a,
 h5 a {
-  color: inherit;
-  font: inherit;
+    color: inherit;
+    font: inherit;
 }
 h2 a:hover,
 h3 a:hover,
 h4 a:hover,
 h5 a:hover {
-  color: #10595f;
+    color: #10595f;
 }
 * {
-  -webkit-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
 }
 ::-moz-selection {
-  /* Code for Firefox */
-  color: #ffffff;
-  background: #666666;
+    /* Code for Firefox */
+    color: #ffffff;
+    background: #666666;
 }
 ::selection {
-  color: #ffffff;
-  background: #666666;
+    color: #ffffff;
+    background: #666666;
 }
 /*========================================================
-										HEADER styles
+HEADER styles
 =========================================================*/
 #header {
-  padding: 20px 0;
-  background: #10595f;
+    padding: 20px 0;
+    background: #10595f;
 }
 #header h1 {
-  float: left;
-  padding-left: 40px;
-  color: #ffffff;
+    float: left;
+    padding-left: 40px;
+    color: #ffffff;
 }
 #header h1 a {
-  font: 700 44px/44px 'Open Sans', sans-serif;
-  color: #ffffff;
+    font: 700 44px/44px 'Open Sans', sans-serif;
+    color: #ffffff;
 }
 #header h1 span {
-  display: block;
-  font: 24px/24px 'Marvel', sans-serif;
+    display: block;
+    font: 24px/24px 'Marvel', sans-serif;
 }
 #header nav {
-  float: right;
+    float: right;
 }
 @media only screen and (max-width: 767px) {
-  #header {
-    text-align: center;
-  }
-  #header h1,
-  #header nav {
-    float: none;
-    display: inline-block;
-  }
-  #header nav {
-    display: block;
-  }
+    #header {
+        text-align: center;
+    }
+    #header h1,
+    #header nav {
+        float: none;
+        display: inline-block;
+    }
+    #header nav {
+        display: block;
+    }
 }
 /* Main menu styles
 ========================================================*/
 .sf-menu {
-  width: 100%;
-  text-align: center;
-  line-height: 20px;
-  margin-top: auto;
-  margin-top: 32px;
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    margin-top: auto;
+    margin-top: 32px;
 }
 .sf-menu > li {
-  display: inline-block;
-  position: relative;
-  padding: 0;
-  margin: 0;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
 .sf-menu > li > a {
-  color: #fff;
-  font-size: 27px;
-  margin-left: 29px;
-  font-family: 'Marvel', sans-serif;
-  margin-bottom: 30px;
-  position: relative;
+    color: #fff;
+    font-size: 27px;
+    margin-left: 29px;
+    font-family: 'Marvel', sans-serif;
+    margin-bottom: 30px;
+    position: relative;
 }
 .sf-menu > li > a:hover {
-  color: #ffffff;
+    color: #ffffff;
 }
 .sf-menu > li > a:hover:after {
-  content: "";
-  height: 4px;
-  width: 100%;
-  background: #dbb3ae;
-  position: absolute;
-  bottom: -30px;
-  left: 0;
+    content: "";
+    height: 4px;
+    width: 100%;
+    background: #dbb3ae;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
 }
 .sf-menu > li:first-child {
-  padding-right: 0;
+    padding-right: 0;
 }
 .sf-menu > li.current > a {
-  color: #ffffff;
+    color: #ffffff;
 }
 .sf-menu > li.current > a:after {
-  content: "";
-  height: 4px;
-  width: 100%;
-  background: #dbb3ae;
-  position: absolute;
-  bottom: -30px;
-  left: 0;
+    content: "";
+    height: 4px;
+    width: 100%;
+    background: #dbb3ae;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
 }
 @media only screen and (max-width: 979px) {
-  .sf-menu li {
-    padding-right: 0;
-  }
+    .sf-menu li {
+        padding-right: 0;
+    }
 }
 /* First level sub-menu styles
 ========================================================*/
 .sf-menu ul {
-  position: absolute;
-  top: 66px;
-  left: -30px;
-  background: #10595f;
-  color: #ffffff;
-  min-width: 157px;
-  z-index: 999;
-  display: none;
-  text-align: left;
-  padding-left: 33px;
-  padding-top: 10px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    position: absolute;
+    top: 66px;
+    left: -30px;
+    background: #10595f;
+    color: #ffffff;
+    min-width: 157px;
+    z-index: 999;
+    display: none;
+    text-align: left;
+    padding-left: 33px;
+    padding-top: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .sf-menu ul:before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: calc(50% - 3px);
-  width: 0;
-  height: 0;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-bottom: 10px solid #10595f;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 3px);
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid #10595f;
 }
 .sf-menu ul li {
-  position: relative;
-  height: 48px;
-  line-height: 48px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+    position: relative;
+    height: 48px;
+    line-height: 48px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 .sf-menu ul li a {
-  line-height: 12px;
-  padding: 10px 0;
-  color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  display: block;
+    line-height: 12px;
+    padding: 10px 0;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    display: block;
 }
 .sf-menu ul li:hover > a {
-  color: #fff;
+    color: #fff;
 }
 /* Second level sub-menu styles
 ========================================================*/
 .sf-menu ul ul {
-  position: absolute;
-  top: 0;
-  left: 126px;
-  z-index: 4;
-  min-width: 157px;
-  border: none;
-  background: #dbb3ae;
+    position: absolute;
+    top: 0;
+    left: 126px;
+    z-index: 4;
+    min-width: 157px;
+    border: none;
+    background: #dbb3ae;
 }
 .sf-menu ul ul:before {
-  display: none;
+    display: none;
 }
 .sf-menu ul ul a:hover {
-  color: #10595f;
+    color: #10595f;
 }
 @media only screen and (max-width: 767px) {
-  .sf-menu {
-    display: none;
-  }
-  .select-menu {
-    display: block;
-    width: 100%;
-    border-color: #10595f;
-    color: #666;
-    font-size: 16px;
-    padding: 5px;
-  }
+    .sf-menu {
+        display: none;
+    }
+    .select-menu {
+        display: block;
+        width: 100%;
+        border-color: #10595f;
+        color: #666;
+        font-size: 16px;
+        padding: 5px;
+    }
 }
 /* Stuck menu styles
 ========================================================*/
 .isStuck {
-  background: #10595f;
-  z-index: 9;
-  padding: 0;
-  border-bottom: 1px solid #10595f;
+    background: #10595f;
+    z-index: 9;
+    padding: 0;
+    border-bottom: 1px solid #10595f;
 }
 .isStuck nav {
-  margin-top: 17px !important;
+    margin-top: 17px !important;
 }
 .isStuck .sf-menu {
-  margin-top: 3px;
+    margin-top: 3px;
 }
 .isStuck .sf-menu > li > a:hover:after {
-  bottom: -23px;
+    bottom: -23px;
 }
 .isStuck .sf-menu > li.current > a:after {
-  bottom: -23px;
+    bottom: -23px;
 }
 @media only screen and (max-width: 979px) {
-  .isStuck {
-    display: none !important;
-  }
+    .isStuck {
+        display: none !important;
+    }
 }
 /*========================================================
-										CONTENT styles
+CONTENT styles
 =========================================================*/
 strong {
-  font-weight: bold;
+    font-weight: bold;
 }
 ol {
-  list-style: auto;
+    list-style: auto;
 }
 h2,
 h3,
 h4 {
-  font-family: 'Marvel', sans-serif;
-  color: #000000;
+    font-family: 'Marvel', sans-serif;
+    color: #000000;
 }
 h2 {
-  font: 300 72px/72px 'Open Sans', sans-serif;
-  text-align: center;
-  margin-bottom: 50px;
+    font: 300 72px/72px 'Open Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
 }
 h2 span {
-  position: relative;
+    position: relative;
 }
 h2 span:before {
-  height: 2px;
-  position: absolute;
-  bottom: 7px;
-  background: #000;
-  width: 100%;
-  content: "";
-  display: block;
-  left: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 7px;
+    background: #000;
+    width: 100%;
+    content: "";
+    display: block;
+    left: 0;
 }
 h3 {
-  font-size: 50px;
-  font-family: 'Marvel', sans-serif;
-  text-align: center;
-  line-height: 50px;
+    font-size: 50px;
+    font-family: 'Marvel', sans-serif;
+    text-align: center;
+    line-height: 50px;
 }
 h4 {
-  font-size: 36px;
-  line-height: 36px;
-  font-family: 'Marvel', sans-serif;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 36px;
+    font-family: 'Marvel', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 h5 {
-  font-size: 27px;
-  line-height: 27px;
-  font-family: 'Marvel', sans-serif;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #000000;
-}
-.h5__mod {
-  color: #10595f;
-}
-p {
-  font: 14px/24px 'Open Sans', sans-serif;
-  color: #727070;
-}
-.full-width-container {
-  width: 100%;
-}
-.img_container {
-  overflow: hidden;
-}
-.img_container img {
-  width: 100%;
-}
-.btn {
-  width: 153px;
-  border: 1px solid #000000;
-  background: #ffffff;
-  display: inline-block;
-  font: 24px/46px 'Open Sans', sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  margin-top: 20px;
-}
-.btn:hover {
-  background: #000000;
-  color: #ffffff;
-}
-.bd-ra {
-  border-radius: 50%;
-}
-.sub_head {
-  font-size: 24px;
-  font-style: italic;
-  line-height: 36px;
-  text-align: center;
-  margin: 0 auto;
-}
-@media only screen and (max-width: 979px) {
-  h2 {
-    font: 300 62px/62px 'Open Sans', sans-serif;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  h2 span:before {
-    display: none;
-  }
-  h3 {
-    font: 45px/45px 'Marvel', sans-serif;
-    text-align: center;
-  }
-  h4 {
-    font: 30px/30px 'Marvel', sans-serif;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  h5 {
-    font: 20px/20px 'Marvel', sans-serif;
+    font-size: 27px;
+    line-height: 27px;
+    font-family: 'Marvel', sans-serif;
     text-align: center;
     margin-bottom: 20px;
     color: #000000;
-  }
-  #header h1 span {
-      font: 16px/24px 'Marvel', sans-serif;
-  }
-  .sf-menu > li > a {
-      font-size: 19px;
-      margin-left: 10px;
-  }
+}
+.h5__mod {
+    color: #10595f;
+}
+p {
+    font: 14px/24px 'Open Sans', sans-serif;
+    color: #727070;
+}
+.full-width-container {
+    width: 100%;
+}
+.img_container {
+    overflow: hidden;
+}
+.img_container img {
+    width: 100%;
+}
+.btn {
+    width: 153px;
+    border: 1px solid #000000;
+    background: #ffffff;
+    display: inline-block;
+    font: 24px/46px 'Open Sans', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 20px;
+}
+.btn:hover {
+    background: #000000;
+    color: #ffffff;
+}
+.bd-ra {
+    border-radius: 50%;
+}
+.sub_head {
+    font-size: 24px;
+    font-style: italic;
+    line-height: 36px;
+    text-align: center;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 979px) {
+    h2 {
+        font: 300 62px/62px 'Open Sans', sans-serif;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    h2 span:before {
+        display: none;
+    }
+    h3 {
+        font: 45px/45px 'Marvel', sans-serif;
+        text-align: center;
+    }
+    h4 {
+        font: 30px/30px 'Marvel', sans-serif;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    h5 {
+        font: 20px/20px 'Marvel', sans-serif;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #000000;
+    }
+    #header h1 span {
+        font: 16px/24px 'Marvel', sans-serif;
+    }
+    .sf-menu > li > a {
+        font-size: 19px;
+        margin-left: 10px;
+    }
 
 }
 @media only screen and (max-width: 767px) {
-  h2 {
-    font: 300 52px/52px 'Open Sans', sans-serif;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  h2 span:before {
-    display: none;
-  }
-  h3 {
-    font: 45px/45px 'Marvel', sans-serif;
-    text-align: center;
-  }
-  h4 {
-    font: 25px/25px 'Marvel', sans-serif;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  h5 {
-    font: 20px/20px 'Marvel', sans-serif;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #000000;
-  }
-  .img_container {
-    margin-bottom: 20px;
-  }
+    h2 {
+        font: 300 52px/52px 'Open Sans', sans-serif;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    h2 span:before {
+        display: none;
+    }
+    h3 {
+        font: 45px/45px 'Marvel', sans-serif;
+        text-align: center;
+    }
+    h4 {
+        font: 25px/25px 'Marvel', sans-serif;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    h5 {
+        font: 20px/20px 'Marvel', sans-serif;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #000000;
+    }
+    .img_container {
+        margin-bottom: 20px;
+    }
 }
 @media only screen and (max-width: 479px) {
-  h2 {
-    font: 300 42px/42px 'Open Sans', sans-serif;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  h2 span:before {
-    display: none;
-  }
-  h3 {
-    font: 35px/35px 'Marvel', sans-serif;
-    text-align: center;
-  }
-  h4 {
-    font: 20px/20px 'Marvel', sans-serif;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  h5 {
-    font: 16px/16px 'Marvel', sans-serif;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #000000;
-  }
-  .img_container {
-    margin-bottom: 20px;
-  }
+    h2 {
+        font: 300 42px/42px 'Open Sans', sans-serif;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    h2 span:before {
+        display: none;
+    }
+    h3 {
+        font: 35px/35px 'Marvel', sans-serif;
+        text-align: center;
+    }
+    h4 {
+        font: 20px/20px 'Marvel', sans-serif;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    h5 {
+        font: 16px/16px 'Marvel', sans-serif;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #000000;
+    }
+    .img_container {
+        margin-bottom: 20px;
+    }
 }
 .index .block-2 {
-  padding: 105px 0 130px;
-  text-align: center;
+    padding: 105px 0 130px;
+    text-align: center;
 }
 .index .block-2 h2 {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 .index .block-2 h4 {
-  margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 .index .block-2 p {
-  width: 66%;
-  margin: 0 auto;
+    width: 66%;
+    margin: 0 auto;
 }
 .index .block-2 .btn {
-  margin-top: 33px;
-  width: 278px;
+    margin-top: 33px;
+    width: 278px;
 }
 .index .block-3 {
-  padding: 123px 0 50px;
-  background: url(../images/index_img_par.jpg);
-  background-attachment: fixed;
-  background-position: center 0%;
-  position: relative;
-  background-repeat: no-repeat;
-  padding-bottom: 100px;
-  z-index: 8;
-  text-align: center;
+    padding: 123px 0 50px;
+    background: url(../images/index_img_par.jpg);
+    background-attachment: fixed;
+    background-position: center 0%;
+    position: relative;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    z-index: 8;
+    text-align: center;
 }
 .index .block-3 h2 {
-  color: #ffffff;
-  margin-bottom: 70px;
+    color: #ffffff;
+    margin-bottom: 70px;
 }
 .index .block-3 h2 span:before {
-  background: #ffffff;
+    background: #ffffff;
 }
 .index .block-3 h3 {
-  color: #ffffff;
+    color: #ffffff;
 }
 .index .block-3 .element {
-  padding: 50px 0;
+    padding: 50px 0;
 }
 .index .block-4 {
-  padding: 120px 0 130px;
-  border-bottom: 1px solid #000;
+    padding: 120px 0 130px;
+    border-bottom: 1px solid #000;
 }
 .index .block-4 h2 {
-  margin-bottom: 65px;
+    margin-bottom: 65px;
 }
 .index .block-4 .owl-text {
-  font-size: 36px;
-  font-family: 'Marvel', sans-serif;
-  color: #312f2f;
-  text-align: center;
-  margin-top: 40px;
+    font-size: 36px;
+    font-family: 'Marvel', sans-serif;
+    color: #312f2f;
+    text-align: center;
+    margin-top: 40px;
 }
 .index .block-5 {
-  padding: 120px 0 70px;
-  text-align: center;
+    padding: 120px 0 70px;
+    text-align: center;
 }
 .index .block-5 h2 {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 .index .block-5 h3 {
-  margin-bottom: 22px;
+    margin-bottom: 22px;
 }
 .index .block-5 .btn {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 .index .block-5 p {
-  text-align: left;
+    text-align: left;
 }
 @media only screen and (max-width: 979px) {
-  .index .block-3 h3 {
-    height: 100px;
-  }
+    .index .block-3 h3 {
+        height: 100px;
+    }
 }
 @media only screen and (max-width: 767px) {
-  .index .block-3 .element {
-    padding: 0;
-  }
-  .index .block-5 article {
-    margin-bottom: 60px;
-  }
+    .index .block-3 .element {
+        padding: 0;
+    }
+    .index .block-5 article {
+        margin-bottom: 60px;
+    }
 }
 .index-1 .block-1 {
-  padding: 120px 0 125px;
+    padding: 120px 0 125px;
 }
 .index-1 .block-1 h2 {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 .index-1 .block-1 p {
-  padding-right: 10px;
-  line-height: 20px;
+    padding-right: 10px;
+    line-height: 20px;
 }
 .index-1 .block-1 .btn {
-  margin-top: 55px;
+    margin-top: 55px;
 }
 .index-1 .block-2 {
-  padding: 120px 0 90px;
-  background: url(../images/index_img_par.jpg);
-  background-attachment: fixed;
-  background-position: center 0%;
-  position: relative;
-  background-repeat: no-repeat;
-  padding-bottom: 100px;
-  z-index: 8;
+    padding: 120px 0 90px;
+    background: url(../images/index_img_par.jpg);
+    background-attachment: fixed;
+    background-position: center 0%;
+    position: relative;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    z-index: 8;
 }
 .index-1 .block-2 h2 {
-  color: #ffffff;
-  margin-bottom: 75px;
+    color: #ffffff;
+    margin-bottom: 75px;
 }
 .index-1 .block-2 h2 span:before {
-  background: #ffffff;
+    background: #ffffff;
 }
 .index-1 .block-2 h4 {
-  color: #ffffff;
-  margin-top: 10px;
-  margin-bottom: 15px;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 .index-1 .block-2 p {
-  color: #ffffff;
-  padding: 0 22px;
+    color: #ffffff;
+    padding: 0 22px;
 }
 .index-1 .block-3 {
-  padding: 125px 0 115px;
-  border-top: 1px solid #4d4a4a;
+    padding: 125px 0 115px;
+    border-top: 1px solid #4d4a4a;
 }
 .index-1 .block-3 h2 {
-  margin-bottom: 70px;
+    margin-bottom: 70px;
 }
 .index-1 .block-3 .bd-ra {
-  width: 68px;
-  height: 68px;
-  line-height: 68px;
-  font-size: 35px;
-  text-align: center;
-  color: #ffffff;
-  background: #10595f;
-  display: block;
-  font-family: 'Open Sans', sans-serif;
+    width: 68px;
+    height: 68px;
+    line-height: 68px;
+    font-size: 35px;
+    text-align: center;
+    color: #ffffff;
+    background: #10595f;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
 }
 @media only screen and (max-width: 979px) and (min-width: 768px) {
-  .index-1 .block-3 .bd-ra {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-  }
+    .index-1 .block-3 .bd-ra {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
 }
 @media only screen and (max-width: 767px) {
-  .index-1 .block-3 .bd-ra {
-    margin: 10px auto;
-  }
-  .index-1 .block-3 p {
-    margin-bottom: 50px;
-  }
+    .index-1 .block-3 .bd-ra {
+        margin: 10px auto;
+    }
+    .index-1 .block-3 p {
+        margin-bottom: 50px;
+    }
 }
 .index-2 .block-1 {
-  padding: 120px 0 70px;
+    padding: 120px 0 70px;
 }
 .index-2 .block-1 h2 {
-  margin-bottom: 64px;
+    margin-bottom: 64px;
 }
 .index-2 .block-1 article {
-  border: 1px solid #000;
-  border-top: none;
-  padding-top: 5px;
-  margin-bottom: 95px;
+    border: 1px solid #000;
+    border-top: none;
+    padding-top: 5px;
+    margin-bottom: 95px;
 }
 .index-2 .block-1 h4 {
-  background: #474747;
-  color: #ffffff;
-  line-height: 52px;
-  margin-top: 0;
-  margin-bottom: 20px;
+    background: #474747;
+    color: #ffffff;
+    line-height: 52px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 .index-2 .block-1 p {
-  padding: 0 32px 25px;
+    padding: 0 32px 25px;
 }
 .index-2 .block-1 .img_container {
-  margin-bottom: 0 !important;
+    margin-bottom: 0 !important;
 }
 .index-3 .block-1 {
-  padding: 120px 0 75px;
+    padding: 120px 0 75px;
 }
 .index-3 .block-1 h2 {
-  text-align: left;
-  margin-bottom: 63px;
+    text-align: left;
+    margin-bottom: 63px;
 }
 .index-3 .block-1 h5 {
-  text-align: left;
-  margin-bottom: 25px;
+    text-align: left;
+    margin-bottom: 25px;
 }
 .index-3 .block-1 .h5__mod {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .index-3 .block-1 li {
-  padding: 11px 0;
+    padding: 11px 0;
 }
 .index-3 .block-1 li a {
-  color: #727070;
-  font: 14px/14px 'Open Sans', sans-serif;
-  text-decoration: underline;
+    color: #727070;
+    font: 14px/14px 'Open Sans', sans-serif;
+    text-decoration: underline;
 }
 .index-3 .block-1 li a:hover {
-  text-decoration: none;
-  color: #10595f;
+    text-decoration: none;
+    color: #10595f;
 }
 .index-3 .block-1 article {
-  margin-bottom: 45px;
+    margin-bottom: 45px;
 }
 .index-3 .block-1 p {
-  line-height: 20px;
+    line-height: 20px;
 }
 .index-3 .block-2 {
-  padding: 110px 0 70px;
-  border-top: 1px solid #4d4a4a;
+    padding: 110px 0 70px;
+    border-top: 1px solid #4d4a4a;
 }
 .index-3 .block-2 h2 {
-  margin-bottom: 74px;
+    margin-bottom: 74px;
 }
 .index-3 .block-2 h5 {
-  text-align: right;
+    text-align: right;
 }
 .index-3 .block-2 .text_content {
-  border: 1px solid #8c8c8c;
-  position: relative;
-  background: #fff;
-  margin-bottom: 75px;
+    border: 1px solid #8c8c8c;
+    position: relative;
+    background: #fff;
+    margin-bottom: 75px;
 }
 .index-3 .block-2 .text_content p {
-  padding: 20px 20px 15px;
+    padding: 20px 20px 15px;
 }
 .index-3 .block-2 .text_content:before {
-  content: "";
-  display: block;
-  width: 33px;
-  height: 28px;
-  background: url(../images/quotes.png) no-repeat;
-  position: absolute;
-  bottom: -28px;
-  right: 30px;
+    content: "";
+    display: block;
+    width: 33px;
+    height: 28px;
+    background: url(../images/quotes.png) no-repeat;
+    position: absolute;
+    bottom: -28px;
+    right: 30px;
 }
 .index-4 p a {
-  color: #10595f;
+    color: #10595f;
 }
 .index-4 p a:hover {
-  color: #fff;
+    color: #fff;
 }
 .index-4 .block-1 {
-  padding: 120px 0 15px;
+    padding: 120px 0 15px;
 }
 .index-4 .block-1 h2 {
-  margin-bottom: 65px;
+    margin-bottom: 65px;
 }
 .index-4 .block-1 #map-canvas {
-  height: 430px;
+    height: 430px;
 }
 .index-4 .block-2 {
-  padding: 70px 0;
+    padding: 70px 0;
 }
 .index-4 .block-2 h2 {
-  font-size: 60px;
-  text-align: left;
+    font-size: 60px;
+    text-align: left;
 }
 .index-4 .block-2 .address {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 .index-4 .block-2 .mail {
-  color: #727070;
+    color: #727070;
 }
 .index-4 .block-2 .mail:hover {
-  color: #10595f;
+    color: #10595f;
 }
 @media only screen and (max-width: 767px) {
-  .index-4 h2 {
-    margin-top: 30px;
-  }
+    .index-4 h2 {
+        margin-top: 30px;
+    }
 }
 /*========================================================
-										FOOTER styles
+FOOTER styles
 =========================================================*/
 #footer {
-  background: #10595f;
-  padding: 100px 0 0;
-  color: #000000;
+    background: #10595f;
+    padding: 100px 0 0;
+    color: #000000;
 }
 #footer a {
-  color: inherit;
+    color: inherit;
 }
 #footer a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 #footer .copyright {
-  text-align: center;
+    text-align: center;
 }
 #footer .copyright .btn {
-  width: 94px;
-  height: 94px;
-  line-height: 94px;
-  font-size: 60px;
-  color: #423e3e;
-  background: #fff;
-  border: none;
-  margin: 30px 50px;
+    width: 94px;
+    height: 94px;
+    line-height: 94px;
+    font-size: 60px;
+    color: #423e3e;
+    background: #fff;
+    border: none;
+    margin: 30px 50px;
 }
 #footer .copyright .btn span {
-  line-height: 94px;
+    line-height: 94px;
 }
 #footer .copyright .btn:hover {
-  background: #423e3e;
-  color: #fff;
+    background: #423e3e;
+    color: #fff;
 }
 #footer .copyright pre {
-  color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  margin-bottom: 10px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 #footer .footer_bottom {
-  height: 35px;
-  text-align: center;
-  background: #423e3e;
+    height: 35px;
+    text-align: center;
+    background: #423e3e;
 }
 @media only screen and (max-width: 767px) {
-  #footer .copyright .btn {
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    margin: 30px 25px;
-  }
+    #footer .copyright .btn {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        margin: 30px 25px;
+    }
 }
 @media only screen and (max-width: 479px) {
-  #footer .copyright .btn {
-    display: block;
-    margin: 20px auto;
-  }
+    #footer .copyright .btn {
+        display: block;
+        margin: 20px auto;
+    }
 }
 /*========================================================
-										Widget styles
+Widget styles
 =========================================================*/
 /* UItoTop styles
 ========================================================*/
 #toTop {
-  display: none;
-  background: #10595f;
-  text-decoration: none;
-  position: fixed;
-  bottom: 80px;
-  right: 30px;
-  overflow: hidden;
-  border: none;
-  color: #fff;
-  width: 73px;
-  height: 73px;
-  font-size: 72px;
-  line-height: 73px;
-  z-index: 20;
-  text-align: center;
-  -webkit-transition: color 0.5s ease;
-  transition: color 0.5s ease;
+    display: none;
+    background: #10595f;
+    text-decoration: none;
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    overflow: hidden;
+    border: none;
+    color: #fff;
+    width: 73px;
+    height: 73px;
+    font-size: 72px;
+    line-height: 73px;
+    z-index: 20;
+    text-align: center;
+    -webkit-transition: color 0.5s ease;
+    transition: color 0.5s ease;
 }
 #toTop:hover {
-  outline: none;
-  color: #fff;
-  -webkit-transition: color 0.5s ease;
-  transition: color 0.5s ease;
+    outline: none;
+    color: #fff;
+    -webkit-transition: color 0.5s ease;
+    transition: color 0.5s ease;
 }
 @media only screen and (max-width: 1199px) {
-  #toTop {
-    display: none !important;
-  }
+    #toTop {
+        display: none !important;
+    }
 }
 /*========================================================
-								RESPONSIVE LAYOUTS STYLES 
+RESPONSIVE LAYOUTS STYLES 
 =========================================================*/
 @media only screen and (max-width: 1199px) {
-  .sample {
-    height: auto;
-    /*delete this class*/
-  }
+    .sample {
+        height: auto;
+        /*delete this class*/
+    }
 }
 @media only screen and (max-width: 979px) {
-  .sample {
-    height: auto;
-    /*delete this class*/
-  }
+    .sample {
+        height: auto;
+        /*delete this class*/
+    }
 }
 @media only screen and (max-width: 767px) {
-  .sample {
-    height: auto;
-    /*delete this class*/
-  }
+    .sample {
+        height: auto;
+        /*delete this class*/
+    }
 }
 @media only screen and (max-width: 480px) {
-  .sample {
-    height: auto;
-    /*delete this class*/
-  }
+    .sample {
+        height: auto;
+        /*delete this class*/
+    }
 }
 @media only screen and (max-width: 320px) {
-  .sample {
-    height: auto;
-    /*delete this class*/
-  }
+    .sample {
+        height: auto;
+        /*delete this class*/
+    }
 }
 /*Core variables and mixins*/
