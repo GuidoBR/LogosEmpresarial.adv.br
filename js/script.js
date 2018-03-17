@@ -121,7 +121,7 @@ document.write('<meta name="viewport" content="width=device-width,initial-scale=
 $('.btn').each(function(){
       var title = $(this).html();
       $(this).addClass('custom_hover');
-      $(this).html('<span><span>'+title+'</span><strong>'+title+'</strong></span>');
+    // $(this).html('<span><span>'+title+'</span><strong>'+title+'</strong></span>');
 })
 
 $("#contact-form").submit(function () {
