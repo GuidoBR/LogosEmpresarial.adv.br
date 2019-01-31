@@ -1,0 +1,69 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 21/12/2016 11:21
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-armchair:before { content: "\f100"; }
+.flaticon-cogwheel:before { content: "\f101"; }
+.flaticon-computer:before { content: "\f102"; }
+.flaticon-food:before { content: "\f103"; }
+.flaticon-hand:before { content: "\f104"; }
+.flaticon-luxury:before { content: "\f105"; }
+.flaticon-sky:before { content: "\f106"; }
+.flaticon-sky-1:before { content: "\f107"; }
+.flaticon-smiley:before { content: "\f108"; }
+.flaticon-technology:before { content: "\f109"; }
+.flaticon-technology-1:before { content: "\f10a"; }
+.flaticon-technology-2:before { content: "\f10b"; }
+.flaticon-technology-3:before { content: "\f10c"; }
+.flaticon-transport:before { content: "\f10d"; }
+.flaticon-ufo:before { content: "\f10e"; }
+    
+    $font-Flaticon-armchair: "\f100";
+    $font-Flaticon-cogwheel: "\f101";
+    $font-Flaticon-computer: "\f102";
+    $font-Flaticon-food: "\f103";
+    $font-Flaticon-hand: "\f104";
+    $font-Flaticon-luxury: "\f105";
+    $font-Flaticon-sky: "\f106";
+    $font-Flaticon-sky-1: "\f107";
+    $font-Flaticon-smiley: "\f108";
+    $font-Flaticon-technology: "\f109";
+    $font-Flaticon-technology-1: "\f10a";
+    $font-Flaticon-technology-2: "\f10b";
+    $font-Flaticon-technology-3: "\f10c";
+    $font-Flaticon-transport: "\f10d";
+    $font-Flaticon-ufo: "\f10e";

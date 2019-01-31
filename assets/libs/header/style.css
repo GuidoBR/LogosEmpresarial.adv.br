@@ -1,0 +1,71 @@
+/*DEMO PAGE STYLES */
+
+.header-demo{
+	overflow:hidden;
+}
+
+.header-demo  .demo-header1{
+      overflow: inherit;
+}
+
+
+.demo-body {
+	position: relative;
+	min-height: 95px;
+	border-bottom: 0;
+	background: url(../../img/section-1-demo.jpg) top center no-repeat;
+	background-size: cover;
+}
+.demo-body-2h {
+    min-height: 145px;
+}
+
+.demo-body-3h {
+    min-height: 165px;
+}
+
+
+.demo-body .navbar-fixed-bottom, .navbar-fixed-top {
+	position: absolute;
+}
+.demo-body .header-section {
+	padding: 180px 0 20px;
+}
+
+.demo-header-1 {
+	overflow: inherit !important;
+}
+.wrap-inside-nav {
+	visibility: hidden;
+}
+.demo-header-1 .wrap-inside-nav {
+	visibility: visible;
+}
+
+
+
+
+@media (max-width:1000px) {
+    
+    .header-demo {
+    overflow: auto;
+}
+    
+        .demo-body {
+    min-height: 85px;
+}
+    
+
+.demo-body-2h {
+   min-height: 180px !important;
+}
+
+    .demo-body-3h {
+    min-height: 210px !important;
+}
+    
+    .demo-header-4.demo-body-2h{
+        min-height: 85px !important; 
+    }
+    
+    }
