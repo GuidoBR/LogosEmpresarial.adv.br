@@ -317,6 +317,7 @@ nav {
 
 .block-box .box-icon-1 {
 	background: #151c32;
+	color: #fff;
 	padding: 45px;
 }
 
@@ -485,6 +486,8 @@ nav {
 	margin-top: 24px;
 	margin-bottom: 60px;
 }
+.section-3 .box-2 i { color: #fff; }
+
 .section-3 .box-2 a {
 	border-radius: 2px;
 	border: 1px solid #ffffff;
