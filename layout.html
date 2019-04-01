@@ -3,38 +3,48 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
       <meta content="telephone=no" name="format-detection" />
       <meta name="HandheldFriendly" content="true" />
-      <link rel="stylesheet" href="assets/css/master.css" />
+      <link rel="stylesheet" href="{{ '/css/master.css'|url }}" />
       <link rel="icon" type="image/x-icon" href="favicon.ico" />
-      <title>Logos & Souza Lima & Lacerda - Consultoria e Assessoria Empresarial e Jurídica</title>
+      <title>{% block title %}Welcome{% endblock %} — LogosEmpresarial</title>
    </head>
    <body>
       <!-- Loader-->
       <div id="page-preloader"><span class="spinner border-t_second_b border-t_prim_a"></span></div>
       <!-- Loader end-->
       <div class="l-theme">
+          
+         <div class="search-block-hidden">
+            <form class="search-global">
+               <input class="search-global__input" type="text" placeholder="Type to search" autocomplete="off" name="s" value="">
+               <button class="search-global__btn"><i class="icon stroke icon-Search"></i>
+               </button>
+               <div class="search-global__note">Begin typing your search above and press return to search.</div>
+            </form>
+            <div class="close-search"><i class="fas fa-times"></i></div>
+         </div>
+
          <header class="header-top-absolute">
             <nav class="me-auto navbar navbar-expand-lg navbar-dark justify-content-between">
-               <div>
-                  <a href="index.html"><img src="assets/media/img/logo.png" alt="Logos Empresarial"></a>
-                  <a href="index.html"><img src="assets/media/img/souza-lima-lacerda.png"  width="175px" height="60px" alt="Souza Lima Lacerda"></a>
-               </div>
+               <a class="navbar-brand d-flex" href="index.html"><img src="{{ '/media/img/logo.svg'|url }}" alt=""><span>Alegada</span></a>
                <div class="d-flex ">
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   </button>
                   <ul class="nav">
                      <li class="close-nav"><i class="fas fa-times"></i></li>
-                     <!--<li class="nav-item active">
+                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="about.html">Equipe</a>
+                        <a class="nav-link" href="about.html">About</a>
                      </li>
                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="practice-single.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Atuação
+                        Practice Areas
                         </a>
                         <div class="dropdown-menu" >
                            <a class="dropdown-item" href="practice-areas-1.html">Practice areas 1</a>
@@ -44,35 +54,80 @@
                      </li>
                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="blog.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Publicações
+                        News
                         </a>
                         <div class="dropdown-menu" >
                            <a class="dropdown-item" href="blog.html">News page</a>
                            <a class="dropdown-item" href="post.html">Post page</a>
                         </div>
                      </li>
-                     <li class="nav-item"><a class="nav-link" href="contacts.html">Contato</a></li>-->
+                     <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Contact</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="forum.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Forums</a>
+                         <div class="dropdown-menu">
+                           <a class="dropdown-item" href="forum.html">Forum</a>
+                           <a class="dropdown-item" href="category.html">Category</a>
+                           <a class="dropdown-item" href="topic.html">Topic</a>
+                        </div>
+                     </li>
                   </ul>
-                  <div class="nav-text d-inline-flex align-items-center">Marque sua Consulta!<span>(21) 983-568-252</span></div>
+                  <div class="search"><i class="fas fa-search"></i></div>
+                  <div class="nav-text d-inline-flex align-items-center">Free Consultation!<span>1-780-624-9821</span></div>
                </div>
             </nav>
          </header>
          <!-- end .header-->
          <!-- Slider main -->
          <section class="slider">
-            <div class="b-main-slider slider-pro" id="main-slider" data-slider-width="100%" data-slider-height="900px">
+            <div class="b-main-slider slider-pro" id="main-slider" data-slider-width="100%" data-slider-height="900px" data-slider-arrows="true" data-slider-buttons="false">
                <div class="sp-slides">
                   <!-- Slide 1-->
                   <div class="sp-slide">
                      <div class="b-main-slider__item b-main-slider__item_2">
-                        <img class="sp-image" src="assets/media/img/justice.jpg" alt="Imagem representando Justiça" />
+                        <img class="sp-image" src="https://via.placeholder.com/1920x880" alt="slider" />
                         <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="200" data-hide-delay="400">
                            <div class="carousel-text">
                               <div class="slide-info-left">
-                                 <h5>Experiência, Credibilidade, e Compromisso com o Resultado.</h5>
-                                 <h2>Consultoria e Assessoria Empresarial e Jurídica</h2>
-                                 <h4>Experiência e compromisso com o resultado dos seus clientes</h4>
-                                 <!-- <div class="carousel-text-button slider-button"><a class="carousel-text-button-red" href="#">Learn More</a><a class="carousel-text-button-white" href="#">Our History</a></div> -->
+                                 <h5>Founded by Expert Attorneys</h5>
+                                 <h2>With Superior Value<br>Providing Legal Services</h2>
+                                 <h4>Excepteur sint occaecat cupidatat non proident sunt in culpa qui<br>officia deserunt mollit anim idsum est laborum.</h4>
+                                 <div class="carousel-text-button slider-button"><a class="carousel-text-button-red" href="#">Learn More</a><a class="carousel-text-button-white" href="#">Our History</a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Slide 2-->
+                  <div class="sp-slide">
+                     <div class="b-main-slider__item b-main-slider__item_2">
+                         <img class="sp-image" src="https://via.placeholder.com/1920x880" alt="slider" />
+                        <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="200" data-hide-delay="400">
+                           <div class="carousel-text">
+                              <div class="slide-info-right">
+                                 <h5>Founded by Expert Attorneys</h5>
+                                 <h2>A Team of Effective &<br>
+                                    Experienced Attorneys
+                                 </h2>
+                                 <div class="carousel-text-button slider-button"><a class="carousel-text-button-red" href="#">Learn More</a><a class="carousel-text-button-white" href="#">Our History</a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                    <!-- Slide 3-->
+                  <div class="sp-slide">
+                     <div class="b-main-slider__item b-main-slider__item_2">
+                         <img class="sp-image" src="https://via.placeholder.com/1920x880" alt="slider" />
+                        <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="200" data-hide-delay="400">
+                           <div class="carousel-text">
+                              <div class="slide-info-center">
+                                 <h5>Founded by Expert Attorneys</h5>
+                                 <h2>The Trusted Law Firm<br>
+                                  With 95% Case Winning Rate
+                                 </h2>
+                                 <div class="carousel-text-button slider-button"><a class="carousel-text-button-white" href="#">Our History</a></div>
                               </div>
                            </div>
                         </div>
@@ -87,30 +142,31 @@
          <div class="block-box d-flex flex-md-column justify-content-between  flex-lg-row flex-sm-column">
             <div class="box-1 d-flex flex-lg-row flex-sm-column flex-md-column">
                <div class="box-span d-flex box-shadow">
-                  <div class="box-icon-1"><i class="fas fa-5x fa-phone" aria-hidden="true"></i></div>
+                  <div class="box-icon-1"><img src="https://via.placeholder.com/60" alt=""></div>
                   <div class="box-text">
-                     <div class="box-text-first">(21) 983-568-252</div>
-                     <div class="box-text-second">Agende seu atendimento</div>
+                     <div class="box-text-first">Easy & 100% Secure Payment System</div>
+                     <div class="box-text-second">Book Your Appointment</div>
                   </div>
                </div>
                <div class="box-span d-flex box-shadow">
-                  <div class="box-icon-1"><i class="fas fa-5x fa-envelope-open" aria-hidden="true"></i></div>
+                  <div class="box-icon-1"><img src="https://via.placeholder.com/60" alt=""></div>
                   <div class="box-text">
-                     <div class="box-text-first"><a href="mailto:atendimento@logosempresarial.adv.br">atendimento@logosempresarial.adv.br</a></div>
-                     <!-- <div class="box-text-first"><a href="mailto:atendimento@logosempresarial.adv.br">atendimento@logosempresarial.adv.br</a></div> -->
-                     <div class="box-text-second">Converse conosco!</div>
+                     <div class="box-text-first">Complete Legal services Firm</div>
+                     <div class="box-text-second">Get Free Experts Advice</div>
                   </div>
                </div>
             </div>
             <div class="box-2 d-flex">
                <div class="d-flex box-2-span align-items-center">
-                  <div class="box-text-left">+30</div>
-                  <div class="box-text-right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Anos de experiência</div>
+                  <div class="box-text-left">25</div>
+                  <div class="box-text-right">Years of Expertise &
+                     <br>Legal Experience
+                  </div>
                </div>
             </div>
          </div>
          <!-- end Block-box -->
-         <!-- Section 2
+         <!-- Section 2 -->
          <section class="section-2">
             <div class="container">
                <div class="row">
@@ -137,22 +193,37 @@
                <div class="row">
                   <div class="col-lg-3 col-md-12 col-sm-12">
                      <div class="box-1">
-                        <h3>Áreas de Consultoria e Assessoria</h3>
+                        <h3>Featured<br>Practice Areas</h3>
                         <div class="line-2-white"></div>
-                        <!--<p>Without gosh gazelle blankly smug broada the jaguar far jeepers wow the darn lokak that and then before froze ullamco laboris nisi ut aliquip aute irure dolor.-->
+                        <p>Without gosh gazelle blankly smug broada the jaguar far jeepers wow the darn lokak that and then before froze ullamco laboris nisi ut aliquip aute irure dolor.
                         </p>
                      </div>
                   </div>
-                  <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="col-lg-3 col-md-12 col-sm-12">
                      <div class="box-2">
-                        <i class="fas fa-gavel fa-3x"></i>
-                        <h4>Jurídico</h4>
+                        <img src="https://via.placeholder.com/51x46" alt="alt">
+                        <h4>Criminal Cases</h4>
+                        <p>Aorem ipsum dolor sit amet adipe elit, sed do eiusmod tempor incids exercitation ullamco laboris nisi ut aliquip ex eala comodo consequa irure dolor reprehend.
+                        </p>
+                        <a href="#">Read More</a>
                      </div>
                   </div>
-                  <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="col-lg-3 col-md-12 col-sm-12">
                      <div class="box-2">
-                        <i class="fas fa-briefcase fa-3x"></i>
-                        <h4>Empresarial</h4>
+                        <img src="https://via.placeholder.com/51x46" alt="alt">
+                        <h4>All Patent Laws</h4>
+                        <p>Aorem ipsum dolor sit amet adipe elit, sed do eiusmod tempor incids exercitation ullamco laboris nisi ut aliquip ex eala comodo consequa irure dolor reprehend.
+                        </p>
+                        <a href="#">Read More</a>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-12 col-sm-12">
+                     <div class="box-2">
+                        <img src="https://via.placeholder.com/51x46" alt="alt">
+                        <h4>Real Estate Laws</h4>
+                        <p>Aorem ipsum dolor sit amet adipe elit, sed do eiusmod tempor incids exercitation ullamco laboris nisi ut aliquip ex eala comodo consequa irure dolor reprehend.
+                        </p>
+                        <a href="#">Read More</a>
                      </div>
                   </div>
                </div>
@@ -163,68 +234,26 @@
          <section class="section-4">
             <div class="container">
                <div class="section-head">
-                  <h2>Áreas</h2>
+                  <h5>Discover Some More Areas</h5>
+                  <h2>Areas of Expertise</h2>
                   <div class="line-2-red"></div>
-                  <h3>Jurídico</h3>
                </div>
                <div class="row space-top-section-4">
                   <div class="col-lg-4 col-md-12">
                      <div class="item-section-4 d-flex">
                         <i class="fas fa-file-invoice-dollar"></i>
                         <div class="item-text">
-                           <h5>Tributário</h5>
-                           <p></p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                        <div class="item-section-4 d-flex">
-                           <i class="fas fa-file-invoice-dollar"></i>
-                           <div class="item-text">
-                              <h5>Administrativo</h5>
-                              <p></p>
-                           </div>
-                        </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                        <div class="item-section-4 d-flex">
-                           <i class="fas fa-file-invoice-dollar"></i>
-                           <div class="item-text">
-                              <h5>Civil</h5>
-                              <p></p>
-                           </div>
-                        </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                     <div class="item-section-4 d-flex">
-                        <i class="fas fa-file-invoice-dollar"></i>
-                        <div class="item-text">
-                           <h5>Societário</h5>
-                           <p></p>
+                           <h5>Insurance Matters</h5>
+                           <p>One some ouch winked far sed playfully that showed yellow reciprocating laorem ipsum dolor sit amet consectetur.</p>
                         </div>
                      </div>
                   </div>
                   <div class="col-lg-4 col-md-12">
                      <div class="item-section-4 d-flex">
-                        <i class="fas fa-gavel"></i>
+                        <i class="fas fa-heart"></i>
                         <div class="item-text">
-                           <h5>Trabalhista</h5>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                     <div class="item-section-4 d-flex">
-                        <i class="fas fa-gavel"></i>
-                        <div class="item-text">
-                           <h5>Penal e Penal Especial</h5>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                     <div class="item-section-4 d-flex">
-                        <i class="fas fa-gavel"></i>
-                        <div class="item-text">
-                           <h5>Ambiental</h5>
+                           <h5>Medical Negligence</h5>
+                           <p>One some ouch winked far sed playfully that showed yellow reciprocating laorem ipsum dolor sit amet consectetur.</p>
                         </div>
                      </div>
                   </div>
@@ -232,38 +261,19 @@
                      <div class="item-section-4 d-flex">
                         <i class="fas fa-home"></i>
                         <div class="item-text">
-                           <h5>Imobiliário</h5>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                     <div class="item-section-4 d-flex">
-                        <i class="fas fa-gavel"></i>
-                        <div class="item-text">
-                           <h5>Recuperação e falência de empresas</h5>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                     <div class="item-section-4 d-flex">
-                        <i class="fas fa-gavel"></i>
-                        <div class="item-text">
-                           <h5>Responsabilidade  civil, penal e administrativa</h5>
+                           <h5>Domestic Violence</h5>
+                           <p>One some ouch winked far sed playfully that showed yellow reciprocating laorem ipsum dolor sit amet consectetur.</p>
                         </div>
                      </div>
                   </div>
                </div>
-               <div class="section-head">
-                     <div class="line-2-red"></div>
-                     <h3>Empresarial</h3>
-                  </div>
-   
                <div class="row space-top-section-4">
                   <div class="col-lg-4 col-md-12">
                      <div class="item-section-4 d-flex">
                         <i class="fas fa-users"></i>
                         <div class="item-text">
-                           <h5>Constituição Societária</h5>
+                           <h5>Executors & Trustees</h5>
+                           <p>One some ouch winked far sed playfully that showed yellow reciprocating laorem ipsum dolor sit amet consectetur.</p>
                         </div>
                      </div>
                   </div>
@@ -271,7 +281,8 @@
                      <div class="item-section-4 d-flex">
                         <i class="fas fa-user-secret"></i>
                         <div class="item-text">
-                           <h5>Fusões e Incorporações</h5>
+                           <h5>Theft Laws</h5>
+                           <p>One some ouch winked far sed playfully that showed yellow reciprocating laorem ipsum dolor sit amet consectetur.</p>
                         </div>
                      </div>
                   </div>
@@ -279,79 +290,8 @@
                      <div class="item-section-4 d-flex">
                         <i class="fas fa-user-shield"></i>
                         <div class="item-text">
-                           <h5>Governança Corporativa</h5>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                     <div class="item-section-4 d-flex">
-                        <i class="fas fa-user-shield"></i>
-                        <div class="item-text">
-                           <h5>Compliance</h5>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                     <div class="item-section-4 d-flex">
-                        <i class="fas fa-user-shield"></i>
-                        <div class="item-text">
-                           <h5>M&A</h5>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                     <div class="item-section-4 d-flex">
-                        <i class="fas fa-user-shield"></i>
-                        <div class="item-text">
-                           <h5>Valuation</h5>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                     <div class="item-section-4 d-flex">
-                        <i class="fas fa-user-shield"></i>
-                        <div class="item-text">
-                           <h5>Auditoria</h5>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                     <div class="item-section-4 d-flex">
-                        <i class="fas fa-user-shield"></i>
-                        <div class="item-text">
-                           <h5>Licenças Especiais</h5>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                     <div class="item-section-4 d-flex">
-                        <i class="fas fa-user-shield"></i>
-                        <div class="item-text">
-                           <h5>Comércio Exterior</h5>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                     <div class="item-section-4 d-flex">
-                        <i class="fas fa-user-shield"></i>
-                        <div class="item-text">
-                           <h5>Aduana</h5>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                     <div class="item-section-4 d-flex">
-                        <i class="fas fa-user-shield"></i>
-                        <div class="item-text">
-                           <h5>Gestão de Passivo</h5>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                     <div class="item-section-4 d-flex">
-                        <i class="fas fa-user-shield"></i>
-                        <div class="item-text">
-                           <h5>Gestão Patrimonial</h5>
+                           <h5>Fraud Protection</h5>
+                           <p>One some ouch winked far sed playfully that showed yellow reciprocating laorem ipsum dolor sit amet consectetur.</p>
                         </div>
                      </div>
                   </div>
@@ -359,7 +299,7 @@
             </div>
          </section>
          <!-- end Section 4 -->
-         <!-- Section 5
+         <!-- Section 5 -->
          <section class="section-5">
             <div class="container">
                <div class="row">
@@ -405,7 +345,7 @@
             </div>
          </section>
          <!-- end Section 5 -->
-         <!-- Section 6
+         <!-- Section 6 -->
          <section class="section-6">
             <div class="section-head">
                <h5>Discover Our Best Works</h5>
@@ -460,12 +400,12 @@
          <!-- end Section 6 -->
          <!-- Section 7 -->
          <section class="section-7">
-            <h2>Ligue agora para marcar seu atendimento</h2>
-            <i class="fas fa-phone-volume"><span>(21) 983-568-252</span></i>
-            <!--<h6>Aorem ipsum dolor sit amet adipe elit sed you eiusmod tempor incids exercitation ullamco laboris<br>
+            <h2>Call Now For Immediate Assistance & Free Consultations</h2>
+            <i class="fas fa-phone-volume"><span>1-780-624-9821</span></i>
+            <h6>Aorem ipsum dolor sit amet adipe elit sed you eiusmod tempor incids exercitation ullamco laboris<br>
                nisi ut aliquip ex eala comodo consequa irure dolor reprehends.
             </h6>
-            <a href="#">Book An Appointment</a>-->
+            <a href="#">Book An Appointment</a>
          </section>
          <!-- end Section 7 -->
          <!-- Section 8 -->
@@ -474,10 +414,11 @@
                <div class="row">
                   <div class="col-md-4">
                      <div class="team-left">
-                        <h2>Conheça nossa equipe</h2>
+                        <h2>Meet Our<br>Best Attorneys</h2>
                         <div class="team-line-red"></div>
-                        <p>Com grande prazer consolidamos a união entre a <em>Logos Consultoria e Assessoria Empresarial</em> com o escritório <em>Souza Lima & Lacerda Advogados Associados</em>, o que nos permite oferecer uma assessoria ainda mais qualificada a nossos clientes, bem como aprofundar nossas pesquisas nas áreas juridica e empresarial, através de reuniões periódicas, onde trocamos idéias e analisamos as mudanças mais significativas na legislação, bem como as decisões dos tribunais superiores.</p>
-                        <p><strong>Experiência, Credibilidade, e Compromisso com o Resultado.</strong></p>
+                        <p>Without gosh gazelle blankly smug broada the jaguar far jeepers wow the darn lokak that and then before froze ullamco laboris isi ut aliquip aute irure dolor.</p>
+                        <p>Aorem ipsum dolor sit amet adipe elit sed you eiusmod tempor incids exercitation ullamco laboris
+                           <br> nisi ut aliquip ex eala comodo consequa irure dolor reprehends.
                         </p>
                      </div>
                   </div>
@@ -486,97 +427,57 @@
                         <div class="team-wrap d-flex">
                            <div class="team-item">
                               <div class="team-item-img">
-                                  <img src="/assets/media/img/moizes-de-oliveira.jpg" width="250px" height="250px" alt="">
+                                  <img src="https://via.placeholder.com/250x250" alt="">
                                  <div class="team-item-hover d-flex justify-content-center align-items-center">
-                                    <a href="https://www.linkedin.com/in/moizes-de-oliveira-93672134/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                                  </div>
                               </div>
                               <div class="team-item-text">
-                                 <h4>Dr. Moizes de Oliveira</h4>
+                                 <h4>Christian Hill</h4>
                                  <h5>Founder</h5>
-                                 <h5>Logos Empresarial</h5>
-                                 <i class="fas fa-phone"><span>(21) 983-568-252</span></i>
+                                 <i class="fas fa-phone"><span>1.234.800.951</span></i>
                               </div>
                            </div>
                            <div class="team-item">
                               <div class="team-item-img">
-                                 <img src="/assets/media/img/marcos-cesar.webp" width="250px" height="250px" alt="">
+                                 <img src="https://via.placeholder.com/250x250" alt="">
                                  <div class="team-item-hover d-flex justify-content-center align-items-center">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
                                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                                  </div>
                               </div>
                               <div class="team-item-text">
-                                 <h4>Dr. Marcos Cesar</h4>
-                                 <h5>Sócio e fundador</h5>
-                                 <h5>Souza Lima & Lacerda</h5>
-                                 <i class="fas fa-phone"><span>(21) 999-742-084</span></i>
+                                 <h4>Sophia Warren</h4>
+                                 <h5>associate lawyer</h5>
+                                 <i class="fas fa-phone"><span>1.234.800.951</span></i>
                               </div>
                            </div>
                            <div class="team-item">
                               <div class="team-item-img">
-                                 <img src="/assets/media/img/plinio-lacerda.webp" width="250px" height="250px" alt="">
+                                 <img src="https://via.placeholder.com/250x250" alt="">
                                  <div class="team-item-hover d-flex justify-content-center align-items-center">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
                                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                                  </div>
                               </div>
                               <div class="team-item-text">
-                                 <h4>Dr. Plínio Lacerda</h4>
-                                 <h5>Sócio e Fundador</h5>
-                                 <h5>Souza Lima & Lacerda</h5>
-                                 <i class="fas fa-phone"><span>(21) 987-978-763</span></i>
+                                 <h4>Matts Hazard</h4>
+                                 <h5>associate lawyer</h5>
+                                 <i class="fas fa-phone"><span>1.234.800.951</span></i>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-               <div>
-                  <div>
-                     <h4>Dr. Marcos Cesar de Souza Lima</h4>
-                     <div class="team-line-red"></div>
-                     <p>Doutor em Ciências Jurídicas e Sociais<br>
-                     Mestre em Direito das Relações Econômicas<br>
-                     Especialista em Direito Civil e Processo Civil<br>
-                     Professor FGV, EMERJ (Escola de Magistratura) e UVA</p>
-                  </div>
-                  <div>
-                        <h4>Dr. Plínio Lacerda Martins</h4>
-                        <div class="team-line-red"></div>
-                        <p>Doutor em Ciências Jurídicas.<br>
-                           Mestre em Direito das Relações Econômicas<br>
-                           Professor da UFF, FGV e EMERJ (Escola de Magistratura) e Promotor de Justiça Aposentado.</p>
-                  </div>
-                  <div>
-                        <div class="team-line-red"></div>
-                        <h4>Dr. Moizes de Oliveira</h4>
-                        <p>Mestre em Estado e Cidadania<br>
-                           Especialista em Direito Empresarial e Ciências Criminais<br>
-                           Professor de Direito<br>
-                           Conselheiro de Administração Independente<br>
-                           Conselheiro Fiscal Independente<br>
-                           Membro Associado do IBGC
-                        </p>
-                  </div>
-                  <div>
-                        <div class="team-line-red"></div>
-                        <h4>Corpo Jurídico</h4>
-                        <ul>
-                           <li>Carlos Aguiar</li>
-                           <li>Gabriela Mendes</li>
-                           <li>Leticia Lacerda</li>
-                           <li>Lucas Bonfatti</li>
-                           <li>Lucas Cavalcanti</li>
-                           <li>Marcelo Trindade</li>
-                           <li>Matheus Mascarenhas</li>
-                           <li>Renata Nemer</li>
-                           <li>Tania Marinho</li>
-                        </ul>
-                  </div>
-               </div>
             </div>
          </section>
          <!-- end Section 8 -->
-         <!-- Section 9
+         <!-- Section 9 -->
          <section class="section-9 d-flex flex-lg-row flex-sm-column flex-md-column">
             <div class="left-block">
                <h2>Agelada Law Agency<br>serves all institutions with<br>best legal solutions</h2>
@@ -597,7 +498,6 @@
          </section>
          <!-- end Section 9 -->
          <!-- Section 10 -->
-         <!--
          <section class="section-10">
             <div class="section-head">
                <h5>What People Say About Us</h5>
@@ -606,7 +506,7 @@
             </div>
             <div class="container">
                <div id="demo" class="carousel slide d-flex" data-ride="carousel">
-                  
+                  <!-- The slideshow -->
                   <div class="carousel-inner">
                      <div class="carousel-item active">
                         <p>Irrespectiv the fleet food of house oh that in lopsidedly well forlornly abortively as bluntly apart prideful boat excluding goldfish that locked gorgeously abstruse to yikes away for luxury swept hey crud more well. Some caterpillar much jeez certain far held raccoon a much much masterful ruefully.
@@ -641,7 +541,7 @@
                            </div>
                         </div>
                      </div>
-                  
+                     <!-- Indicators -->
                   </div>
                   <ul class="carousel-indicators">
                      <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -651,9 +551,8 @@
                </div>
             </div>
          </section>
-         -->
          <!-- end Section 10 -->
-         <!-- Section 11
+         <!-- Section 11 -->
          <section class="section-11">
             <div class="container-fluid">
                <div class="row">
@@ -661,7 +560,7 @@
                      <div class="block-l line-vertical">
                         <h3>Our lawyers are diverse & give good insights to client’s cases, Also providing personal care & keeping your best interests in their minds.
 </h3>
-                        <img src="assets/media/img/kester.png" alt="">
+                        <img src="{{ '/media/img/kester.png'|url }}" alt="">
                      </div>
                   </div>
                   <div class="col-md-8">
@@ -697,7 +596,6 @@
          </section>
          <!-- end Section 11 -->
          <!-- Section 12 -->
-         <!--
          <section class="section-12">
             <div class="section-head">
                <h5>What People Say About Us</h5>
@@ -758,11 +656,9 @@
                </div>
             </div>
          </section>
-         -->
          <!-- end Section 12 -->
          <!-- Section 13 -->
-         <!--
-            <section class="section-13 logo-back">
+         <section class="section-13 logo-back">
             <div class="container">
                <div class="row">
                   <div class="col-md-5">
@@ -781,31 +677,27 @@
                </div>
             </div>
          </section>
-         -->
          <!-- end Section 13 -->
          <!-- Footer -->
          <footer>
             <div class="container">
                <div class="row">
                   <div class="col-md-3">
-                     <img src="assets/media/img/logo.png" alt="Logos Empresarial"></a>
-                     <img src="assets/media/img/souza-lima-lacerda.png" width="175px" height="60px" alt="Souza Lima Lacerda"></a></a>
+                     <a class="navbar-brand d-flex" href="#"><img src="{{ '/media/img/logo-footer.svg'|url }}" alt=""><span>Alegada</span></a>
                      <div class="line-red"></div>
-                     <p class="footer-logo-text">Parceria para uma assessoria de qualidade com resultados positivos.</p>
+                     <p class="footer-logo-text">Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullao mco laboris nisi aliquip.</p>
                   </div>
-                     <div class="col-md-3">
-                     <h4 class="footer-head">Links</h4>
+                  <div class="col-md-3">
+                     <h4 class="footer-head">Quick Links</h4>
                      <div class="line-red-2"></div>
                      <ul class="list-left list-footer">
-                        <li><a href="http://portal.stf.jus.br/">STF</a></li>
-                        <li><a href="http://www.stj.jus.br/sites/STJ">STJ</a></li>
-                        <li><a href="http://www.tst.jus.br/">TST</a></li>
-                        <li><a href="http://www.tse.jus.br/">TSE</a></li>
-                        <li><a href="https://portal.fgv.br/">FGV</a></li>
-                        <li><a href="https://www.ibgc.org.br/">IBGC</a></li>
+                        <li><a href="#">Alegada Law Firm</a></li>
+                        <li><a href="#">Lawyers Team</a></li>
+                        <li><a href="#">Recent Cases</a></li>
+                        <li><a href="#">Court Legal News</a></li>
+                        <li><a href="#">Contact Us</a></li>
                      </ul>
                   </div>
-                  <!--
                   <div class="col-md-3">
                      <h4 class="footer-head">Practise Areas</h4>
                      <div class="line-red-2"></div>
@@ -817,29 +709,17 @@
                         <li><a href="#">Family Matters</a></li>
                      </ul>
                   </div>
-                  -->
                   <div class="col-md-3">
-                     <h4 class="footer-head">Contato</h4>
+                     <h4 class="footer-head">Contact Alegada</h4>
                      <div class="line-red-2"></div>
-                     <p class="footer-text-2">Avenida das Americas, 3500
-                        <br>Edificio Hong Kong 3000 – sala 116
-                        <br>Le Monde Offices
-                        <br>Barra da Tijuca – RJ
-                        <br>Celular: (21) 983-568-252 
-                        <br>Telefone: (21) 3030-1734
-                        <br>CEP: 22640-102
+                     <p class="footer-text-2">4328 White Avenue
+                        <br>Suite # 865 Sacramento
+                        <br>CA 95817 USA
+                        <br>Phone: 1-780-624-9821
                      </p>
-                     <div class="line-red-2"></div>
-                     <p class="footer-text-2">Travessa do Paço, 23
-                        <br>Grupo 805
-                        <br>Centro – Rio de Janeiro – RJ
-                        <br>Celular: (21) 999-742-084
-                        <br>Telefone: (21) 2215-2222
-                        <br>CEP: 20010-170
-                     </p>
+                     <a class="footer-map" href="#">Map & Directions </a>
                   </div>
                   <div class="line-footer"></div>
-                  <!--
                   <div class="col-md-6">
                      <h6 class="footer-alegada">Alegada Law Firm © 2018  -  All rights reserved.</h6>
                   </div>
@@ -852,7 +732,6 @@
                         <a href="#"><i class="fab fa-youtube"></i></a>
                      </div>
                   </div>
-                  -->
                </div>
             </div>
          </footer>
@@ -862,25 +741,25 @@
       <!-- ++++++++++++-->
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
       <!-- Bootstrap-->
-      <script src="assets/libs/bootstrap/bootstrap.js"></script>
+      <script src="{{ '/libs/bootstrap/bootstrap.js'|url }}"></script>
       <!-- Slider-->
-      <script src="assets/libs/slider-pro/jquery.sliderPro.min.js"></script>
-      <script src="assets/libs/owl-carousel/owl.carousel.min.js"></script>
-      <script src="assets/libs/bxslider/jquery.bxslider.min.js"></script>
+      <script src="{{ '/libs/slider-pro/jquery.sliderPro.min.js'|url }}"></script>
+      <script src="{{ '/libs/owl-carousel/owl.carousel.min.js'|url }}"></script>
+      <script src="{{ '/libs/bxslider/jquery.bxslider.min.js'|url }}"></script>
       <!-- Pop-up window-->
-      <script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+      <script src="{{ '/libs/magnific-popup/jquery.magnific-popup.min.js'|url }}"></script>
       <!-- Mail scripts-->
       <!-- Filter and sorting images-->
       <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
       <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
       <!-- Animations-->
-      <script src="assets/libs/scrollreveal/scrollreveal.min.js"></script>
-      <script src="assets/libs/animate/wow.min.js"></script>
-      <script src="assets/libs/animate/jquery.shuffleLetters.js"></script>
-      <script src="assets/libs/animate/jquery.scrollme.min.js"></script>
+      <script src="{{ '/libs/scrollreveal/scrollreveal.min.js'|url }}"></script>
+      <script src="{{ '/libs/animate/wow.min.js'|url }}"></script>
+      <script src="{{ '/libs/animate/jquery.shuffleLetters.js'|url }}"></script>
+      <script src="{{ '/libs/animate/jquery.scrollme.min.js'|url }}"></script>
       <!-- Main slider-->
-      <script src="assets/libs/slider-pro/jquery.sliderPro.min.js"></script>
+      <script src="{{ '/libs/slider-pro/jquery.sliderPro.min.js'|url }}"></script>
       <!-- User customization-->
-      <script src="assets/js/custom.js"></script>
+      <script src="{{ '/js/custom.js'|url }}"></script>
    </body>
 </html>
