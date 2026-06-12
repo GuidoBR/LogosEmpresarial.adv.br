@@ -1,201 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114296538-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+<head>
+  <script>document.documentElement.className+=" js";</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato — LOGOS Consultoria e Assessoria Empresarial</title>
+  <meta name="description" content="Fale com a LOGOS — Consultoria e Assessoria Empresarial no Rio de Janeiro. Telefone, WhatsApp, e-mail, endereços na Barra da Tijuca e no Centro.">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="preload" href="fonts/cormorant-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-			gtag('config', 'UA-114296538-1');
-		</script>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Principal">
+        <a class="brand" href="index.html" aria-label="LOGOS — página inicial">
+          <img class="brand-logos" src="images/logo.png" alt="LOGOS Consultoria e Assessoria Empresarial" width="175" height="60">
+          <img class="brand-logos brand-logos--partner" src="images/souza-lima-lacerda.png" alt="Souza Lima &amp; Lacerda Advogados Associados" width="175" height="60">
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="empresa.html">A Empresa</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="projetos.html">Áreas de Atuação</a></li>
+          <li><a href="contato.html" aria-current="page">Contato</a></li>
+          <li class="nav-cta"><a class="btn btn--primary" href="https://wa.me/5521983568252" target="_blank" rel="noopener">Fale conosco</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <title>Logos - Consultoria e Assessoria | Contato</title>
-    <meta charset="utf-8">
-    <meta name = "format-detection" content = "telephone=no" />
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact-form.css">
-  </head>
-  <body class="index-4">
-    <!--==============================header=================================-->
-    <header id="header">
-      <div id="stuck_container">
-        <div class="container">
-          <div class="row">
-            <div class="grid_12">
-              <h1><a href="index.html">
-                <img src="images/logo.png" alt="LOGOS - Consultoria e Assessoria Empresarial" width="175px" height="60px">
-                <img src="images/souza-lima-lacerda.png" alt="Souza Lima & Lacerda" width="175px" height="60px">
-              </a></h1>
-              <nav>
-                <ul class="sf-menu">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="equipe.html">Equipe</a></li>
-                  <li><a href="empresa.html">Empresa</a></li>
-                  <li><a href="projetos.html">Atuação</a></li>
-                  <li><a class="current" href="social.html">Responsabilidade Social</a></li>
-                  <li class="current"><a href="contato.html">Contato</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
+  <main id="main">
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Contato</p>
+          <h1 class="section-title">Fale com a LOGOS</h1>
+          <p class="lead">Conte-nos o seu caso. Responderemos o mais breve possível.</p>
         </div>
-      </div>
-    </header>
 
-    <!--=======content================================-->
-    
-    <section id="content">
-      <div class="full-width-container block-1">
-        <div class="container">
-          <div class="row">
-            <div class="grid_12">
-              <div class="content_map">
-                <div class="google-map-api">
-                  <div id="map-canvas" class="gmap"></div>
-                </div>
+        <div class="contact-grid">
+          <div>
+            <!-- TODO: troque YOUR_FORM_ID pelo ID do formulário criado em https://formspree.io (o formato antigo com e-mail na URL foi descontinuado). -->
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+              <input type="hidden" name="_subject" value="[LogosEmpresarial.adv.br] Contato pelo site">
+
+              <div class="field">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+                <span class="error" aria-live="polite"></span>
               </div>
-            </div>
+
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+                <span class="error" aria-live="polite"></span>
+              </div>
+
+              <div class="field">
+                <label for="phone">Telefone <span style="font-weight:400;color:var(--muted)">(opcional)</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+
+              <div class="field">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" required minlength="5"></textarea>
+                <span class="error" aria-live="polite"></span>
+              </div>
+
+              <div class="btn-row">
+                <button type="submit" class="btn btn--primary">Enviar mensagem</button>
+                <button type="reset" class="btn btn--outline">Limpar</button>
+              </div>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
           </div>
-        </div>
-      </div>
-      <div class="full-width-container block-2">
-        <div class="container">
-          <div class="row">
-            <div class="grid_5">
-              <form id="contact-form" action="https://formspree.io/atendimento@logosempresarial.adv.br" method="POST">
-                <div class="contact-form-loader"></div>
-                <fieldset>
-                  <label class="name">
-                    <span class="text">Nome:</span>
-                    <input type="text" name="name" placeholder="" value="" data-constraints="@Required @JustLetters" />
-                  </label>
-                  <label class="email">
-                    <span class="text">E-mail:</span>
-                    <input type="text" name="email" placeholder="" value="" data-constraints="@Required @Email" />
-                  </label>
-                  <input type="hidden" name="_subject" value="[LogosEmpresarial.adv.br] -Contato" />
-                  <!--<label class="phone">
-                    <span class="text">Assunto:</span>
-                    <input type="text" name="phone" placeholder="" value="" data-constraints="@Required" />
-                  </label>-->
-                  <label class="message">
-                    <span class="text">Mensagem:</span>
-                    <textarea name="message" placeholder="" data-constraints='@Required @Length(min=5,max=999999)'></textarea>
-                  </label>
-                  <div class="cont_btn">
-                    <input type="reset" data-type="reset" class="btn" value="Limpar">
-                    <input type="submit" data-type="submit" class="btn" value="Enviar">
-                  </div>
-                </fieldset>
-                <div id="email-success-modal" class="modal fade response-message">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Sucesso</h4>
-                      </div>
-                      <div class="modal-body">
-                        Sua mensagem foi enviada! Entraremos em contato em breve
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="grid_6 preffix_1">
-              <div class="grid_3 alpha">
-                <div class="address">
-                  <p>LOGOS Empresarial<br>Avenida das Americas, 3500 - Edificio Hong Kong 3000 - sala 116 - Le Mond Offices <br>Barra da Tijuca, Rio de Janeiro, RJ.</p>
-                </div>
-              </div>
-              <div class="grid_3">
-                <div class="address">
-                  <p>Telefone: (21) 3030-1734 <br>Celular: (21) 983 568 252 <br><a href="mailto:atendimento@logosempresarial.adv.br" class="mail">atendimento@logosempresarial.adv.br</a></p>
-                </div>
-              </div>
 
+          <div>
+            <div class="info-card">
+              <h3>Barra da Tijuca</h3>
+              <address>
+                Avenida das Américas, 3500 — Edifício Hong Kong 3000, sala 116<br>
+                Le Monde Offices — Barra da Tijuca, Rio de Janeiro — RJ
+              </address>
             </div>
+            <div class="info-card">
+              <h3>Centro</h3>
+              <address>
+                Avenida Rio Branco, 133 — grupo 1801<br>
+                Centro, Rio de Janeiro — RJ
+              </address>
+            </div>
+            <div class="info-card">
+              <h3>Telefone e e-mail</h3>
+              <address>
+                Telefone: <a href="tel:+552130301734">(21) 3030-1734</a><br>
+                Celular / WhatsApp: <a href="tel:+5521983568252">(21) 98356-8252</a><br>
+                <a href="mailto:atendimento@logosempresarial.adv.br">atendimento@logosempresarial.adv.br</a>
+              </address>
+            </div>
+
+            <a class="map-embed" href="https://www.openstreetmap.org/?mlat=-22.999412&amp;mlon=-43.348752#map=16/-22.999412/-43.348752" target="_blank" rel="noopener" aria-label="Abrir mapa da unidade Barra da Tijuca em nova aba">
+              <iframe title="Mapa da unidade Barra da Tijuca" width="100%" height="300" loading="lazy" style="border:0;pointer-events:none"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-43.3588%2C-23.0054%2C-43.3388%2C-22.9934&amp;layer=mapnik&amp;marker=-22.999412%2C-43.348752"></iframe>
+            </a>
           </div>
         </div>
       </div>
     </section>
+  </main>
 
-    <!--=======footer=================================-->
-    <footer id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="grid_12 copyright">
-            <img src="images/logo.png" alt="Logos">
-            <pre>Avenida das Americas, 3500 – Edificio Hong Kong 3000 – sala 116 – Le Monde Offices - Barra da Tijuca – Rio de Janeiro – RJ
-        Avenida Rio Branco, 133 - grupo 1801 - Centro
-          <a href="mailto:atendimento@logosempresarial.adv.br"><i class="fa fa-envelope fa-lg"></i> atendimento@logosempresarial.adv.br</a>
-          <i class="fa fa-phone fa-lg"></i> (21) 983 568 252 - (21) 3030-1734</pre>
-        <pre>© <span id="copyright-year"></span></pre>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="images/logo.png" alt="LOGOS" width="175" height="60">
+          <p>Consultoria e assessoria jurídica e empresarial, em parceria com Souza Lima &amp; Lacerda Advogados Associados.</p>
         </div>
+        <div>
+          <h4>Endereços</h4>
+          <address>Av. das Américas, 3500 — Ed. Hong Kong 3000, sala 116<br>Le Monde Offices — Barra da Tijuca, Rio de Janeiro — RJ</address>
+          <address>Av. Rio Branco, 133 — grupo 1801<br>Centro, Rio de Janeiro — RJ</address>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <address>
+            <a href="tel:+552130301734">(21) 3030-1734</a><br>
+            <a href="tel:+5521983568252">(21) 98356-8252</a><br>
+            <a href="mailto:atendimento@logosempresarial.adv.br">atendimento@logosempresarial.adv.br</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> LOGOS — Consultoria e Assessoria Empresarial</span>
+        <span>Rio de Janeiro — RJ, Brasil</span>
       </div>
     </div>
   </footer>
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-migrate-1.2.1.js"></script>
-    <script src="js/script.js"></script>
-    <script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>
-    <!--[if (gt IE 9)|!(IE)]><!-->
-    <script src="js/wow.js"></script>
-    <script>
-      $(document).ready(function () {
-        if ($('html').hasClass('desktop')) {
-          new WOW().init();
-        }
-      });
-    </script>
-    <!--<![endif]-->
-    <!--[if lt IE 8]>
-    <div style=' clear: both; text-align:center; position: relative;'>
-      <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-        <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-      </a>
-    </div>
-    <![endif]-->
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
-    <![endif]-->
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkXVy2y37y5Yk4fPEmR8cvUgiQpisIppE&callback=initMap"type="text/javascript"></script>
-  <script type="text/javascript">
-    // google_api_map_init();
-    function initMap(){
-      var map;
-      var coordData = new google.maps.LatLng(parseFloat(-22.999412), parseFloat(-43.348752,12));
-      var markCoord1 = new google.maps.LatLng(parseFloat(-22.999412), parseFloat(-43.348752));
-      var marker;
-
-      function initialize() {
-        var mapOptions = {
-          zoom: 15,
-          center: coordData,
-          scrollwheel: false,
-        }
-
-        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-
-        marker = new google.maps.Marker({
-          map:map,
-          position: markCoord1,
-        });
-
-        google.maps.event.addDomListener(window, 'resize', function() {
-          map.setCenter(coordData);
-          var center = map.getCenter();
-        });
-      }
-
-      google.maps.event.addDomListener(window, "load", initialize);
-    }
-
-</script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
