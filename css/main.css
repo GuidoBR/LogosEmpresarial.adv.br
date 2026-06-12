@@ -27,6 +27,7 @@
   --teal-700: #10595f;
   --teal-50:  #eef4f4;
 
+  --gold-700: #8a6410;
   --gold-600: #b8881f;
   --gold-500: #c9a24b;
   --gold-300: #e3cd92;
@@ -102,10 +103,11 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
   letter-spacing: .18em;
   font-size: .76rem;
   font-weight: 700;
-  color: var(--gold-600);
+  color: var(--gold-700);
   margin-bottom: .75rem;
 }
-.section--teal .eyebrow { color: var(--gold-300); }
+.section--teal .eyebrow,
+.hero .eyebrow { color: var(--gold-300); }
 .section-title { font-size: clamp(2rem, 1.4rem + 2.2vw, 3rem); margin-bottom: 1rem; }
 .section-head { max-width: 56ch; margin-bottom: clamp(2rem, 5vw, 3rem); }
 .section-head--center { margin-inline: auto; text-align: center; }
