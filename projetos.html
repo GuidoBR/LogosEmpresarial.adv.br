@@ -251,7 +251,8 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 .area-block { scroll-margin-top: 100px; padding-block: clamp(2.5rem, 5vw, 3.5rem); border-top: 1px solid var(--line); }
 .area-block:first-of-type { border-top: 0; }
 .area-block .split { align-items: start; }
-.area-block h3 { font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.1rem); }
+.area-block h2 { font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.1rem); }
+.area-block h3 { font-size: 1.3rem; }
 .area-block .split-media img { position: sticky; top: 100px; }
 
 /* ---------- Team ---------- */
@@ -288,7 +289,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 
 .info-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem 1.75rem; box-shadow: var(--shadow-sm); }
 .info-card + .info-card { margin-top: 1.25rem; }
-.info-card h3 { font-size: 1.35rem; margin-bottom: .5rem; }
+.info-card h2 { font-size: 1.35rem; margin-bottom: .5rem; }
 .info-card address { font-style: normal; color: var(--body); }
 .info-card a { font-weight: 600; }
 .map-embed { margin-top: 1.25rem; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); display: block; }
@@ -304,7 +305,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 .site-footer { background: var(--teal-900); color: #b9cccb; padding-block: clamp(3rem, 6vw, 4.5rem) 2rem; }
 .footer-grid { display: grid; gap: 2rem; grid-template-columns: 1fr; }
 @media (min-width: 760px) { .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; } }
-.site-footer h4 { color: #fff; font-family: var(--font-sans); font-size: .82rem; text-transform: uppercase; letter-spacing: .14em; margin-bottom: 1rem; }
+.site-footer h3 { color: #fff; font-family: var(--font-sans); font-size: .82rem; text-transform: uppercase; letter-spacing: .14em; margin-bottom: 1rem; }
 .site-footer a { color: #cddddc; text-decoration: none; }
 .site-footer a:hover { color: var(--gold-300); }
 .site-footer address { font-style: normal; line-height: 1.6; margin-bottom: 1.25rem; }
@@ -324,8 +325,8 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
     <div class="container">
       <nav class="nav" aria-label="Principal">
         <a class="brand" href="index.html" aria-label="LOGOS — página inicial">
-          <img class="brand-logos" src="images/logo.png" alt="LOGOS Consultoria e Assessoria Empresarial" width="175" height="60">
-          <img class="brand-logos brand-logos--partner" src="images/souza-lima-lacerda.png" alt="Souza Lima &amp; Lacerda Advogados Associados" width="175" height="60">
+          <img class="brand-logos" src="images/logo.png" alt="LOGOS Consultoria e Assessoria Empresarial" width="195" height="60">
+          <img class="brand-logos brand-logos--partner" src="images/souza-lima-lacerda.png" alt="Souza Lima &amp; Lacerda Advogados Associados" width="1139" height="501">
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -370,7 +371,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
           <div class="split">
             <div class="split-media reveal"><img src="images/opt/infraestrutura.webp" alt="Infraestrutura" width="760" height="507" loading="lazy" decoding="async"></div>
             <div class="prose reveal">
-              <h3>Infraestrutura</h3>
+              <h2>Infraestrutura</h2>
               <p>Com uma equipe experiente e atuante nas mais diversas áreas — serviço, indústria ou comércio, públicas ou privadas — prestamos consultoria com assessoria plena na elaboração, implantação e desenvolvimento de projetos de grande, médio e pequeno porte.</p>
               <p>Assessoramos o cliente na busca e negociação junto a agências e bancos de fomento, nacionais ou internacionais.</p>
               <p>Nossa assessoria é plena, acompanhando o cliente desde o estudo de viabilidade do negócio e seus riscos até a implantação do projeto.</p>
@@ -382,7 +383,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
           <div class="split">
             <div class="split-media reveal"><img src="images/opt/tributario.webp" alt="Tributário e gestão fiscal" width="760" height="507" loading="lazy" decoding="async"></div>
             <div class="prose reveal">
-              <h3>Tributário — Gestão Fiscal</h3>
+              <h2>Tributário — Gestão Fiscal</h2>
               <p>O sistema tributário nacional é de tamanha complexidade que, diante das mudanças diárias de dispositivos — portarias, resoluções, decretos —, o contribuinte ora deixa de cumprir adequadamente obrigações, ora deixa de desfrutar de benefícios legalmente oferecidos, seja por incentivos às atividades de indústria, comércio e serviços.</p>
               <p>Nossa assessoria é prestada por profissionais com larga experiência em direito tributário, que dedicam horas a fio ao acompanhamento das mudanças diárias na legislação, proporcionando ao cliente tranquilidade para trabalhar sem sustos quando submetido a uma ação fiscal. Entre muitas, destacamos:</p>
               <ol>
@@ -402,7 +403,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
           <div class="split">
             <div class="split-media reveal"><img src="images/opt/auditoria.webp" alt="Auditoria" width="760" height="507" loading="lazy" decoding="async"></div>
             <div class="prose reveal">
-              <h3>Auditoria</h3>
+              <h2>Auditoria</h2>
               <p>A eficácia e a eficiência das ações de uma empresa dependem da harmonia entre os diversos setores que a compõem. Para que essa harmonia exista, é necessário que o gestor tenha pleno conhecimento de como caminham os procedimentos e resultados desses setores.</p>
               <p>A partir de resultados aferidos em dezenas de auditorias ao longo de mais de 20 anos, estruturamos nosso departamento em setores especializados. As auditorias da LOGOS são executadas por especialistas, com base nos princípios de <strong>auditoria financeira, fiscal, contábil e jurídica</strong>. Reunidos os relatórios de cada área, apresentamos um panorama exato da realidade da empresa, permitindo ao gestor decisões relevantes — corrigindo rumos ou ampliando ações.</p>
             </div>
@@ -413,7 +414,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
           <div class="split">
             <div class="split-media reveal"><img src="images/opt/business.webp" alt="Administrativo" width="760" height="507" loading="lazy" decoding="async"></div>
             <div class="prose reveal">
-              <h3>Administrativo</h3>
+              <h2>Administrativo</h2>
               <p>Assessoria plena em processos administrativos, com apresentação de defesas, acompanhamento em audiências, sustentação oral e defesa nos Tribunais Superiores.</p>
               <p>Preparação de documentação para participação em licitações e contratos.</p>
               <p>Defesas, contestação e sustentação oral em processos administrativos disciplinares.</p>
@@ -425,7 +426,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
           <div class="split">
             <div class="split-media reveal"><img src="images/opt/index-3_img-4.webp" alt="Contencioso e arbitral" width="760" height="507" loading="lazy" decoding="async"></div>
             <div class="prose reveal">
-              <h3>Contencioso e Arbitral</h3>
+              <h2>Contencioso e Arbitral</h2>
               <p>Atuação em litígios judiciais e em câmaras de arbitragem, com acompanhamento do cliente em todas as instâncias e na busca por soluções negociadas sempre que possível.</p>
             </div>
           </div>
@@ -435,7 +436,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
           <div class="split">
             <div class="split-media reveal"><img src="images/opt/index-3_img-5.webp" alt="Contratos" width="760" height="507" loading="lazy" decoding="async"></div>
             <div class="prose reveal">
-              <h3>Contratos</h3>
+              <h2>Contratos</h2>
               <p>A exatidão das cláusulas contratuais é a segurança do negócio. Acompanhamos e participamos da elaboração dos contratos a quatro mãos com o cliente, oferecendo a segurança necessária — do simples contrato de locação aos contratos de fusão de empresas, empreendimentos diversos, parcerias internacionais e sistemas de cooperação mercantil e industrial.</p>
             </div>
           </div>
@@ -445,7 +446,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
           <div class="split">
             <div class="split-media reveal"><img src="images/opt/index-3_img-1.webp" alt="Civil" width="760" height="507" loading="lazy" decoding="async"></div>
             <div class="prose reveal">
-              <h3>Civil</h3>
+              <h2>Civil</h2>
               <p>Atuação com especialistas nas respectivas áreas: Direito de Família, Direito dos Contratos, Inventário, Execuções e Cobranças judiciais e extrajudiciais e Medidas Cautelares.</p>
             </div>
           </div>
@@ -455,7 +456,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
           <div class="split">
             <div class="split-media reveal"><img src="images/opt/index-3_img-2.webp" alt="Trabalhista" width="760" height="507" loading="lazy" decoding="async"></div>
             <div class="prose reveal">
-              <h3>Trabalhista</h3>
+              <h2>Trabalhista</h2>
               <p>Assessoria plena, estruturação de Departamento de RH e implantação de sistemas de controle de pessoal.</p>
               <p>Acompanhamento de ações trabalhistas, do ajuizamento à sustentação oral nos Tribunais Superiores.</p>
             </div>
@@ -466,7 +467,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
           <div class="split">
             <div class="split-media reveal"><img src="images/opt/imobiliario.webp" alt="Imobiliário" width="760" height="507" loading="lazy" decoding="async"></div>
             <div class="prose reveal">
-              <h3>Imobiliário</h3>
+              <h2>Imobiliário</h2>
               <p>As transações imobiliárias são cercadas de peculiaridades que, se não observadas, podem gerar dúvidas e até demandas judiciais desnecessárias.</p>
               <p>O atendimento por nossos especialistas abrange da administração do bem imóvel ao acompanhamento do processo de compra e venda — do contrato à lavratura da escritura —, retomada de imóvel, despejo, aquisição por usucapião e demais procedimentos administrativos ou judiciais.</p>
             </div>
@@ -477,7 +478,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
           <div class="split">
             <div class="split-media reveal"><img src="images/opt/index-3_img-5.webp" alt="Ambiental" width="760" height="507" loading="lazy" decoding="async"></div>
             <div class="prose reveal">
-              <h3>Ambiental</h3>
+              <h2>Ambiental</h2>
               <p>Elaboração de projetos e processos de licenciamento ambiental.</p>
               <p>Orientação e acompanhamento dos procedimentos na implantação de plantas ambientais.</p>
               <p>Defesas em processos administrativos junto aos órgãos de controle e em autuações.</p>
@@ -489,7 +490,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
           <div class="split">
             <div class="split-media reveal"><img src="images/opt/index-3_img-1.webp" alt="Criminal" width="760" height="507" loading="lazy" decoding="async"></div>
             <div class="prose reveal">
-              <h3>Criminal</h3>
+              <h2>Criminal</h2>
               <p>No Brasil estamos sujeitos a um universo de leis penais complexas e de pouca publicização, o que impede que o cidadão conheça todos os procedimentos considerados ilícitos penais. Muitos empresários têm sido surpreendidos por indiciamento em crimes, principalmente fiscais, sem saber que sua conduta era ilícita — muitas vezes por repetirem práticas “comuns no mercado”.</p>
               <p>Cientes disso, oferecemos assessoria plena, de caráter preventivo, para evitar a prática de ilícitos penais, e corretivo, para corrigir atos materializados. Nossos clientes são acompanhados em todos os atos, do inquérito policial à última instância.</p>
             </div>
@@ -500,11 +501,11 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
           <div class="split">
             <div class="split-media reveal"><img src="images/opt/index-3_img-1.webp" alt="Comércio exterior" width="760" height="507" loading="lazy" decoding="async"></div>
             <div class="prose reveal">
-              <h3>Comércio Exterior</h3>
+              <h2>Comércio Exterior</h2>
               <p>Assessoria plena para atuação no comércio exterior.</p>
-              <h4 style="margin-top:1.5rem">RADAR — Habilitação no SISCOMEX</h4>
+              <h3 style="margin-top:1.5rem">RADAR — Habilitação no SISCOMEX</h3>
               <p>Também conhecido como Registro e Rastreamento da Atuação dos Intervenientes Aduaneiros, é o sistema da Receita Federal que permite que empresas importem e exportem.</p>
-              <h4 style="margin-top:1.5rem">Importação</h4>
+              <h3 style="margin-top:1.5rem">Importação</h3>
               <ul>
                 <li>Classificação fiscal de mercadorias;</li>
                 <li>Sistema Integrado de Comércio Exterior (SISCOMEX);</li>
@@ -520,7 +521,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
                 <li>Bagagem desacompanhada e devolução de mercadoria ao exterior;</li>
                 <li>Infrações e penalidades; assessoria no fechamento de câmbio.</li>
               </ul>
-              <h4 style="margin-top:1.5rem">Exportação</h4>
+              <h3 style="margin-top:1.5rem">Exportação</h3>
               <ul>
                 <li>Requisitos para operar em comércio exterior — exportação;</li>
                 <li>Classificação fiscal de mercadorias e comandos no SISCOMEX;</li>
@@ -554,16 +555,16 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
     <div class="container">
       <div class="footer-grid">
         <div>
-          <img class="footer-logo" src="images/logo.png" alt="LOGOS" width="175" height="60">
+          <img class="footer-logo" src="images/logo.png" alt="LOGOS" width="195" height="60">
           <p>Consultoria e assessoria jurídica e empresarial, em parceria com Souza Lima &amp; Lacerda Advogados Associados.</p>
         </div>
         <div>
-          <h4>Endereços</h4>
+          <h2>Endereços</h2>
           <address>Av. das Américas, 3500 — Ed. Hong Kong 3000, sala 116<br>Le Monde Offices — Barra da Tijuca, Rio de Janeiro — RJ</address>
           <address>Av. Rio Branco, 133 — grupo 1801<br>Centro, Rio de Janeiro — RJ</address>
         </div>
         <div>
-          <h4>Contato</h4>
+          <h2>Contato</h2>
           <address>
             <a href="tel:+552130301734">(21) 3030-1734</a><br>
             <a href="tel:+5521983568252">(21) 98356-8252</a><br>

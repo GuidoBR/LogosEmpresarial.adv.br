@@ -239,7 +239,8 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 .area-block { scroll-margin-top: 100px; padding-block: clamp(2.5rem, 5vw, 3.5rem); border-top: 1px solid var(--line); }
 .area-block:first-of-type { border-top: 0; }
 .area-block .split { align-items: start; }
-.area-block h3 { font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.1rem); }
+.area-block h2 { font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.1rem); }
+.area-block h3 { font-size: 1.3rem; }
 .area-block .split-media img { position: sticky; top: 100px; }
 
 /* ---------- Team ---------- */
@@ -276,7 +277,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 
 .info-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem 1.75rem; box-shadow: var(--shadow-sm); }
 .info-card + .info-card { margin-top: 1.25rem; }
-.info-card h3 { font-size: 1.35rem; margin-bottom: .5rem; }
+.info-card h2 { font-size: 1.35rem; margin-bottom: .5rem; }
 .info-card address { font-style: normal; color: var(--body); }
 .info-card a { font-weight: 600; }
 .map-embed { margin-top: 1.25rem; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); display: block; }
@@ -292,7 +293,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 .site-footer { background: var(--teal-900); color: #b9cccb; padding-block: clamp(3rem, 6vw, 4.5rem) 2rem; }
 .footer-grid { display: grid; gap: 2rem; grid-template-columns: 1fr; }
 @media (min-width: 760px) { .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; } }
-.site-footer h4 { color: #fff; font-family: var(--font-sans); font-size: .82rem; text-transform: uppercase; letter-spacing: .14em; margin-bottom: 1rem; }
+.site-footer h3 { color: #fff; font-family: var(--font-sans); font-size: .82rem; text-transform: uppercase; letter-spacing: .14em; margin-bottom: 1rem; }
 .site-footer a { color: #cddddc; text-decoration: none; }
 .site-footer a:hover { color: var(--gold-300); }
 .site-footer address { font-style: normal; line-height: 1.6; margin-bottom: 1.25rem; }
